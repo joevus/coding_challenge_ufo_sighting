@@ -25,9 +25,9 @@ services:
   sightings:
     image: "doldroyd/ufo-sighting:firstload"
     environment:
-      ENDPOINT: http://web:5000/sighting
-  #web:
-  #  build: .
-  #  ports:
-  #    - "5000:5000"
+      ENDPOINT: http://localhost:5000/sighting
+  web:
+   build: .
+   ports:
+     - "5000:5000"
   
